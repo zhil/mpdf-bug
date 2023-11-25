@@ -1,0 +1,838 @@
+<form action="pdf.php" method="POST">
+<h1>FSPH html - working</h1>
+<textarea name="html">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body style="margin:0;">
+<div class="wrapper" style="width: 100%;  margin: 0 auto;">
+    <table  align="center" style="border-collapse: collapse; font-family: Helvetica, Arial, sans-serif; color: #404040; font-size: 18px; max-width: 1280px; width: 100%;">
+		<tr>
+			<td style="padding: 50px 60px;" valign="top">
+				<table style="border-collapse: collapse; width: 100%;">
+					<tr>
+						<td align="center" valign="middle" colspan="2" style="width: 50%; border: 1px solid #404040; padding: 5px;">
+							<img width="250" src="data:image/jpeg;base64,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" alt="" >
+							<p style="padding: 0; margin:10px 0 0 0; font-weight: bold; text-transform: uppercase;">INFORMED FINANCIAL CONSENT</p>
+						</td>
+						<td colspan="2" style="width: 50%; border: 1px solid #404040; padding: 5px;">
+							<table>
+								<tbody>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;"><strong>Ur No:</strong></td>
+										<td style="padding: 1px 1px 1px 15px;">29223</td>
+									</tr>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;"><strong>Surname:</strong></td>
+										<td style="padding: 1px 1px 1px 15px;">DEVNEY</td>
+									</tr>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;"><strong>Given Name:</strong></td>
+										<td style="padding: 1px 1px 1px 15px;">Lorem ipsum.</td>
+									</tr>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;"><strong>Date of Birth:</strong></td>
+										<td style="padding: 1px 1px 1px 15px;">23-APR-36 <strong style="padding-left: 15px;">Gender:</strong> М</td>
+									</tr>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;"><strong>Dr:</strong></td>
+										<td style="padding: 1px 1px 1px 15px;">Grant Phillips</td>
+									</tr>
+									<tr>
+										<td style="padding: 15px 1px 1px 1px;"><strong>Admission No:</strong></td>
+										<td style="padding: 15px 1px 1px 15px;">350512</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="border: 1px solid #404040; padding:5px; border-right: 0;">
+							<table>
+								<tbody>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;"><strong>Admission Date:</strong></td>
+										<td style="padding: 1px 1px 1px 15px;">19-JUL-2023 </td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td align="center" colspan="2" style="border: 1px solid #404040; padding:5px; border-left: 0;">
+							<p style="padding: 0; margin:0; font-weight: bold; text-transform: uppercase;">INSURED PATIENT</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4" style="height: 35px; background: #404040; border: 1px solid #404040;"></td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="bottom" style="width: 50%; border: 1px solid #404040; padding:5px; border-right: 0;">
+							<table>
+								<tbody>
+									<tr>
+										<td style="padding: 1px 1px 10px 1px;"><strong>Private Insurance</strong></td>
+										<td style="padding: 1px 1px 1px 15px;"></td>
+									</tr>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;">Health Insurer: </td>
+										<td style="padding: 1px 1px 1px 15px;">MBP</td>
+									</tr>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;">Level of Cover:</td>
+										<td style="padding: 1px 1px 1px 15px;">T</td>
+									</tr>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;">Member No:</td>
+										<td style="padding: 1px 1px 1px 15px;">2202609471</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td valign="bottom" colspan="2" style="width: 50%; border: 1px solid #404040; padding:5px; border-left: 0;">
+							<table>
+								<tbody>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;">Exclusions/Restrictions: </td>
+										<td style="padding: 1px 1px 1px 15px;">Yes</td>
+									</tr>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;">Financial: </td>
+										<td style="padding: 1px 1px 1px 15px;">Yes</td>
+									</tr>
+									<tr>
+										<td style="padding: 1px 1px 1px 1px;">Subject to PEA: </td>
+										<td style="padding: 1px 1px 1px 15px;">No</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" valign="bottom" style="width: 50%; border: 1px solid #404040; padding:5px; border-right: 0;">
+							<table>
+								<tbody>
+								<tr>
+									<td style="padding: 1px 1px 1px 1px; min-width: 150px;">Item Number(s): </td>
+									<td style="padding: 1px 1px 1px 15px;">31363 / 31363 / 31363</td>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+						<td valign="bottom" colspan="2" style="width: 50%; border: 1px solid #404040; padding:5px; border-left: 0;">
+							<table>
+								<tbody>
+								<tr>
+									<td style="padding: 1px 1px 1px 1px;">Estimated Length of Stay: </td>
+									<td style="padding: 1px 1px 1px 15px;">2</td>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4" valign="bottom" style="width: 50%; border: 1px solid #404040; padding:5px; ">
+							<table>
+								<tbody>
+								<tr>
+									<td style="padding: 1px 1px 1px 1px; min-width: 150px;">Procedure: </td>
+									<td style="padding: 1px 1px 1px 15px;">EXCISION x3 SCC LEFT LOWER LEG VAC DRESSING</td>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4" style="border: 1px solid #404040; padding:0px;">
+							<table style="border-collapse: collapse; width: 100%">
+								<tr>
+									<td align="left" valign="middle" style="width: 17%; padding: 5px; background: #404040; border: 1px solid #404040;">
+										<p style="padding: 0; margin: 0; color: #fff; font-weight: bold;">Charge Type</p>
+									</td>
+									<td align="center" valign="middle" style="width: 25%; padding: 5px; background: #404040; border: 1px solid #404040;">
+										<p style="padding: 0; margin: 0; color: #fff; font-weight: bold;">Insurer Contracted Rate</p>
+									</td>
+									<td align="center" valign="middle" style="width: 25%; padding: 5px; background: #404040; border: 1px solid #404040;">
+										<p style="padding: 0; margin: 0; color: #fff; font-weight: bold;">Insurer Rebate</p>
+									</td>
+									<td align="center" valign="middle" style="width: 25%; padding: 5px; background: #404040; border: 1px solid #404040;">
+										<p style="padding: 0; margin: 0; color: #fff; font-weight: bold;">Patient Cost <br>(Payable on Admission)</p>
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										Accommodation:
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										ОМ $865.00 х 2 $5,261.00 <br> = $5,261.00
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										$5,261.00
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-bottom: 1px solid #bfbfbf;">
+										$0.00
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										Theatre:
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										31363 : $1,473.00 <br>
+										31363: $0.00 <br>
+										31363: $0.00
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										$1,473.00 <br>
+										$0.00 <br>
+										$0.00
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-bottom: 1px solid #bfbfbf;">
+										$0.00 <br>
+										$0.00 <br>
+										$0.00
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										Other:
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-bottom: 1px solid #bfbfbf;">
+
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										Prosthesis/Gap:
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										$0.00
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-bottom: 1px solid #bfbfbf;">
+
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										Insurer Excess:
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										<div style="width: 100%; background: #404040; min-height: 25px; color: #fff; padding: 5px; box-sizing: border-box;"></div>
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf; border-bottom: 1px solid #bfbfbf;">
+										<div style="width: 100%; background: #404040; min-height: 25px; color: #fff; padding: 5px; box-sizing: border-box;"></div>
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-bottom: 1px solid #bfbfbf;">
+										$0.00
+									</td>
+								</tr>
+								<tr>
+									<td align="left" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf;">
+										<p style="padding: 0;margin: 0; font-size: 1.2em;"><strong>TOTAL:</strong></p>
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf;">
+										<strong>$6,734.0</strong>
+									</td>
+									<td align="center" valign="top" style="padding: 5px; border-right: 1px solid #bfbfbf;">
+										<strong>$6,734.0</strong>
+									</td>
+									<td align="center" valign="top" style="padding: 5px;">
+										<strong>$0.00</strong>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4" style="height: 30px;">
+
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4" style="border: 1px solid #404040; padding:5px;">
+							Exclusions/Comments: <br>
+							МО BENEFITS are payable for Cosmetic Surgery.
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="width:50%; border: 1px solid #404040; padding:5px;">
+							<table>
+								<tbody>
+								<tr>
+									<td style="padding: 1px 1px 1px 1px;">Estimation Completed By:</td>
+									<td style="padding: 1px 1px 1px 15px;">ТМ</td>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+						<td colspan="2" style="width:50%; border: 1px solid #404040; padding:5px;">
+							<table>
+								<tbody>
+								<tr>
+									<td style="padding: 1px 1px 1px 1px;">Date:</td>
+									<td style="padding: 1px 1px 1px 15px;">25-JUL-23 14:51:06 </td>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4" style="padding-top: 20px;">
+							<p style="padding: 0; margin: 0 0 20px 0;">If you are having a surgical procedure, your doctor may need to use costly prosthesis devices. Some of these
+								devices have a gap, which is not payable by your health insurer. If these devices are used, the additional charge
+								will be payable by yourself at the time of discharge. Separate accounts may be raised from other providers such as
+								but not limited to: the treating doctor{s) or surgeon(s) or resident doctor(s}, the anaesthetist(s), pathology,
+								radiology, pharmacy or physiotherapy. The patient will be responsible for these accounts and therefore should
+								consult their service providers regarding these charges.</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4" style="background: #404040; border: 1px solid #404040; color: #fff; padding: 5px; font-weight:bold;">Patient or Person responsible for Account Declaration</td>
+					</tr>
+					<tr>
+						<td colspan="4" style="padding-top: 20px;">
+							<p style="padding: 0; margin: 0 0 20px 0;">The amount above is an estimate. | understand that if the treatment provided or length of stay differs from this
+								estimate, then unforseen changes are payable on or prior to discharge. | accept full responsibility for accounts
+								rendered by Friendly Society Private Hospital including any shortfall in reimbursement by my health insurer. |
+								accept full responsibility for accounts rendered by the Friendly Society Private Hospital Pharmacy for any unopened
+								pharmaceutical items that are issued to me on discharge.</p>
+							<p style="padding: 0; margin: 0 0 20px 0;"><strong>If the hospital is notified by your health insurer that you are not covered for the stated procedures, or you
+								have not completed your waiting period, an invoice will be sent to you for the full cost of your hospital stay.</strong></p>
+							<p style="padding: 0; margin: 0 0 40px 0;">
+								Patient/NOK/Carer/Legal Guardian Signature:
+								<span style="display: inline-block; min-width: 500px; border-bottom: 1px solid #404040;"></span>
+								Date:
+								<span style="display: inline-block; min-width: 150px; border-bottom: 1px solid #404040;"></span>
+							</p>
+							<table width="100%" style="border-collapse: collapse;">
+								<tbody>
+								<tr>
+									<td align="left" style="padding-right: 30px;">
+										<p style="border-bottom: 1px dotted #404040; margin: 0;"></p>
+										<p style="margin: 0; padding-top: 10px;">NAME</p>
+									</td>
+									<td align="left" style="padding-right: 30px; width: 25%;">
+										<p style="border-bottom: 1px dotted #404040; margin: 0;"></p>
+										<p style="margin: 0; padding-top: 10px;">RELATIONSHIP</p>
+									</td>
+									<td align="left" style="padding-right: 30px;">
+										<p style="border-bottom: 1px dotted #404040; margin: 0;"></p>
+										<p style="margin: 0; padding-top: 10px;">ADDRESS</p>
+									</td>
+									<td align="left" style="width: 18%;">
+										<p style="border-bottom: 1px dotted #404040; margin: 0;"></p>
+										<p style="margin: 0; padding-top: 10px;">TELEPHONE</p>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="4" style="padding-top: 50px;">
+							<p style="padding: 0; margin: 0 0 20px 0;text-align:center; font-size: 1.2em;"><strong>Frequently Asked Questions</strong></p>
+							<div>
+								<p style="padding: 0;margin: 0;"><strong><em>What does Private Health Insurance Cover?</em></strong> <br></p>
+								<p style="padding: 0; margin: 0 0 20px 0;">Private Health Insurance covers your hospital and medical costs associated with your treatment; you may have to
+									pay an out of pocket expense depending on your type and level of cover selected (see excess, co-payments and gap
+									fees below).</p>
+								<p style="padding: 0; margin: 0 0 20px 0;">As a private patient you have the right to choose your own doctor, and decide whether you will be treated in a
+									public or a private hospital that your doctor attends. You may also have more choice as to the timing of the
+									treatment. If you choose to be treated as a private patient, Medicare will cover you for 75% of the Medicare
+									Benefits Schedule (MBS) fee for doctors’ services. However you will be charged for the remaining 25% of the MBS
+									fee for doctors’ services.</p>
+							</div>
+							<div>
+								<p style="padding: 0;margin: 0;"><strong><em>Does hospital insurance cover me for the full cost of a hospital visit?</em></strong> <br></p>
+								<p style="padding: 0; margin: 0 0 20px 0;">This will depend оп the type of policy you have, whether your insurer provides gap cover, and the arrangements
+									your insurer has with the hospital you visit. If you have selected a policy with an excess or co-payment, you  will have to pay the agreed amount per day or per treatment to the hospital.</p>
+							</div>
+							<div>
+								<p style="padding: 0;margin: 0;"><strong><em>What is an Excess?</em></strong> <br></p>
+								<p style="padding: 0; margin: 0 0 20px 0;">An excess is also known as a front-end deductible. This is an amount that you have agreed with your health
+									insurer to pay towards the cost of hospital treatment, in exchange for lower premiums. An excess can apply once
+									or several times, depending on your specific policy. This excess is required to be paid on admission to the
+									hospital.</p>
+							</div>
+							<div>
+								<p style="padding: 0;margin: 0;"><strong><em>What is a co-payment?</em></strong> <br></p>
+								<p style="padding: 0; margin: 0 0 20px 0;">A co-payment is also known as an overnight excess or patient moiety. This is an amount that you have agreed with
+									your health insurer to pay each day you are in hospital, in exchange for lower premiums. For example, you agree
+									to pay the first $50 per day in hospital. Some co-payments have a maximum amount per hospital stay, or a limit on the number of days it applies per stay. These co-payments are required to be paid to the hospital,</p>
+							</div>
+							<div>
+								<p style="padding: 0;margin: 0;"><strong><em>What are hospital insurance restrictions?</em></strong> <br></p>
+								<p style="padding: 0; margin: 0 0 20px 0;">Restrictions are services that a patients chosen insurance policy only partially covers. Reduced benefits will
+									be paid by your health insurer for hospital costs associated with the treatment of these restricted services in
+									a private hospital. Patients are required to fund the remaining costs.</p>
+							</div>
+							<div>
+								<p style="padding: 0;margin: 0;"><strong><em>What are hospital insurance exclusions?</em></strong> <br></p>
+								<p style="padding: 0; margin: 0 0 20px 0;">Exclusions are services that a patient's chosen insurance policy does not cover at all. Health insurers will
+									not pay any benefits towards hospital or medical costs for these items. Patients are required to fully fund
+									these excluded treatments in a private hospital.</p>
+							</div>
+							<div>
+								<p style="padding: 0;margin: 0;"><strong><em>What is a pre-existing condition or pre-existing ailment?</em></strong> <br></p>
+								<p style="padding: 0; margin: 0 0 20px 0;">A pre-existing condition or ailment is an illness or condition, the signs or symptoms of which, in the opinion
+
+									of a medical practitioner appointed by the health insurer, existed prior to taking out hospital cover or
+									upgrading to a higher level of cover.
+
+									A health insurer may impose a 12-month waiting period on benefits for hospital treatment where it should have
+									been reasonably apparent to either the contributor or a doctor who conducts an examination, that there was a
+									pre-existing ailment prior to taking out hospital cover or upgrading to a higher level of cover.</p>
+							</div>
+							<div>
+								<p style="padding: 0;margin: 0;"><strong><em>What is the gap?</em></strong> <br></p>
+								<p style="padding: 0; margin: 0 0 20px 0;">
+									<strong>Gap in Doctors Fees</strong> <br>
+									А 'дар' is the amount you pay out of your own pocket for medical services, over and above what уси get back from
+									Medicare or your private health insurer (ie the gap between the Medical Benefits Scheduie (MBS) fee and what
+									doctors actually charge). Some health insurers have gap cover arrangemeants to insure against some or all of
+									these additional payments. Doctors can decide to use the gap cover arrangements on a case-by-case basis, so
+									full cover cannot usually be guaranteed by the insurer.
+								</p>
+								<p style="padding: 0; margin: 0 0 20px 0;">
+									<strong>Gap in Prosthesis Fees</strong> <br>
+									The Department of Health and Ageing have implemented a Prosthesis Schedule. This schedule sets the price Health
+									insurers are required to pay for Prostheses. If suppliers charge above this set price, the difference (gap) is
+									payable by the patient.
+								</p>
+								<p style="padding: 0; margin: 0 0 20px 0;">
+									<strong>How can | avoid unexpected costs when going to hospital?</strong> <br>
+									If possible, before you start your treatment, ask your doctor for a written, detailed estimate of the fees
+									involved, including any out-of-pocket costs. Contact your health insurer with the details of your treatment and
+									confirm what benefits it will pay and what you will need to pay.
+								</p>
+								<p style="padding: 0; margin: 0 0 20px 0;">
+									For Further information regarding Health Insurance please go visit www.privatehealth.gov.au</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
+</textarea>
+<input type="submit" value="Generate PDF" />
+</form>
+
+<form action="pdf.php" method="POST">
+	<h1>Lifehouse html - NOT working</h1>
+	<textarea name="html">
+		<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body style="margin:0;">
+<div class="wrapper" style="width: 100%;  margin: 0 auto;">
+    <table  align="center" style="border-collapse: collapse; font-family: Helvetica, Arial, sans-serif; color: #000; font-size: 18px; max-width: 1280px; width: 100%;">
+		<tr>
+			<td style="padding: 50px 60px;" valign="top">
+				<table style="border-collapse: collapse; width: 100%;">
+					<tr>
+						<td style="padding-bottom: 25px;">
+							<p style="margin: 0; padding: 0; text-transform: uppercase; font-weight: bold; text-align: center;">INFORMED FINANCIAL CONSENT</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-bottom: 40px;">
+							<table style="border-collapse: collapse; width: 100%;">
+								<tr>
+									<td style="width: 55%;"  valign="top">
+										<table style="border-collapse: collapse;">
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>IFC Print Date: </strong></td>
+												<td valign="top" style="padding-bottom: 25px;">05/08/21</td>
+											</tr>
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>Patient Name:</strong></td>
+												<td valign="top" style="padding-bottom: 25px;">Alexander Moore</td>
+											</tr>
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>Patient Address:</strong></td>
+												<td valign="top" style="padding-bottom: 25px;"><span style="max-width: 200px; display:block;">132 ST GEORGES ROAD,BEXLEY,New South Wales,2207</span></td>
+											</tr>
+										</table>
+									</td>
+									<td style="width: 45%;"  valign="top">
+										<table style="border-collapse: collapse;">
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>Medical Record Number:</strong></td>
+												<td valign="top" style="padding-bottom: 25px;">L100002050</td>
+											</tr>
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>Account Number:</strong></td>
+												<td valign="top" style="padding-bottom: 25px;">A001856338</td>
+											</tr>
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>Visit Date:</strong></td>
+												<td valign="top" style="padding-bottom: 25px;">05/07/21</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-top: 1px solid #727272; border-bottom: 1px solid #727272; padding: 20px 20px 0 20px;">
+							<p style="margin: 0 0 20px 0; line-height: 1.5;">The Chris O'Brien Lifehouse is committed to ensuring that you are informed about your financial obligations. Depending on
+								your health cover and/or insurance arrangements, you may be responsible for out-of-pocket expenses for the services /
+								treatment you receive at Chris O'Brien Lifehouse. Based on the information Chris O'Brien Lifehouse has received, we are
+								able to provide you with the estimate below which identifies the costs that you will be required to pay directly to Chris
+								O'Brien Lifehouse in advance of receiving services / treatment. Where an estimate is not possible in advance of treatment
+								or service delivery (e.g. in the case of emergency circumstances), Chris O'Brien Lifehouse will secure your informed
+								financial consent as soon as reasonably possible afterwards.</p>
+							<p style="margin: 0 0 20px 0; line-height: 1.5;">Unless otherwise specified, the estimate is limited to the charges and out-of-pocket expenses associated with the services /
+								treatment provided by Chris O'Brien Lifehouse. This estimate does not apply to services you may receive while at Chris
+								O'Brien Lifehouse from doctors in private practice (e.g. your admitting doctor, anaesthetist) or other private service
+								providers. We encourage you to secure written advice on their fees too. We also recommend you or your
+								Guardian/Nominated Decision Maker contact your private health insurer prior to admission if possible, to confirm your
+								benefits for this admission (i.e. excess, copayments, waiting periods or product exclusions) and that your premium
+								payments are up to date.</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-bottom: 1px solid #727272; padding: 20px 30px 40px 20px;">
+							<p style="margin: 0 0 30px 0; padding: 0; text-transform: uppercase; font-weight: bold;">CHRIS O'BRIEN LIFEHOUSE ESTIMATE</p>
+							<table style="border-collapse: collapse; width: 100%;">
+								<thead>
+									<tr>
+										<td style="padding: 0 5px 30px; text-align: left; width: 100px;"><strong>Item</strong></td>
+										<td style="padding: 0 5px 30px; text-align: left;"><strong>Description</strong></td>
+										<td style="padding: 0 5px 30px; text-align: center; width: 130px;"><strong>Quantity</strong></td>
+										<td style="padding: 0 5px 30px; text-align: left; width: 130px;"><strong>Charge</strong></td>
+										<td style="padding: 0 5px 30px; text-align: left; width: 130px;"><strong>Benefit</strong></td>
+										<td style="padding: 0 5px 30px; text-align: left; width: 130px;"><strong>Out-of-Pocket</strong></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="padding: 5px 7px;">30473</td>
+										<td style="padding: 5px 7px;">Accommodation</td>
+										<td style="padding: 5px 7px; text-align: center;">1</td>
+										<td style="padding: 5px 7px;">0.00</td>
+										<td style="padding: 5px 7px;">0.00</td>
+										<td style="padding: 5px 7px;">0.00</td>
+									</tr>
+									<tr>
+										<td style="padding: 5px 7px;">30473</td>
+										<td style="padding: 5px 7px;">Accommodation</td>
+										<td style="padding: 5px 7px; text-align: center;">1</td>
+										<td style="padding: 5px 7px;">0.00</td>
+										<td style="padding: 5px 7px;">0.00</td>
+										<td style="padding: 5px 7px;">0.00</td>
+									</tr>
+									<tr>
+										<td style="padding: 35px 7px 5px 7px;"></td>
+										<td style="padding: 35px 7px 5px 7px;"><strong>TOTALS</strong></td>
+										<td style="padding: 35px 7px 5px 7px; text-align: center;"></td>
+										<td style="padding: 35px 7px 5px 7px;">1144.00 </td>
+										<td style="padding: 35px 7px 5px 7px;">1144.00 </td>
+										<td style="padding: 35px 7px 5px 7px;">1144.00 </td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 20px 20px 20px 20px;">
+							<p style="margin: 0 0 15px 0; padding: 0; text-transform: uppercase; font-weight: bold; text-align: center;">DECLARATION BY PATIENT OR THEIR AGENT OR GUARDIAN:</p>
+							<p style="margin: 0 0 20px 0; line-height: 1.5;">I have been advised of the above estimated out-of-pocket expenses associated with my services/treatment at Chris O'Brien
+								Lifehouse. I understand that this is an estimate only which has been calculated on the information available as at the date
+								on this form, and additional costs may be payable by me in the event of unforeseen circumstances such as changes to the
+								benefits payable for my treatment or variations and/or delays to my planned treatment. I understand that I will be
+								responsible for any costs not covered by my health cover or insurer, and I agree to pay for all additional costs associated
+								with the services/treatment provided to me by Chris O'Brien Lifehouse.</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 40px 20px 20px 20px;">
+							<table style="border-collapse: collapse; width: 100%;">
+								<tr>
+									<td style="width: 60%; padding-bottom: 20px; padding-right: 40px;"  valign="top">
+										<table style="border-collapse: collapse; width: 100%;">
+											<tr>
+												<td style="padding-right: 20px;"><strong>Signed:</strong></td>
+												<td style="border-bottom: 1px solid #727272; width: 100%;"></td>
+											</tr>
+										</table>
+									</td>
+									<td style="width: 40%; padding-bottom: 20px;"  valign="top">
+										<table style="border-collapse: collapse; width: 100%;">
+											<tr>
+												<td style="padding-right: 20px;"><strong>Date:</strong></td>
+												<td style="border-bottom: 1px solid #727272; width: 100%;"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<table style="border-collapse: collapse; width: 100%;">
+											<tr>
+												<td style="padding-right: 20px; white-space: nowrap;"><strong>If signed by Patient's Guardian or <br>Substitute Decision Maker, Full Name (Print):</strong></td>
+												<td style="border-bottom: 1px solid #727272; width: 100%;"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="right" style="padding: 20px; font-size: 14px;">
+							Page 1 of 1
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</textarea>
+	<input type="submit" value="Generate PDF" />
+</form>
+
+<form action="pdf.php" method="POST">
+	<h1>Lifehouse html - working, but with commented out block</h1>
+	<textarea name="html">
+		<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body style="margin:0;">
+<div class="wrapper" style="width: 100%;  margin: 0 auto;">
+	<table  align="center" style="border-collapse: collapse; font-family: Helvetica, Arial, sans-serif; color: #000; font-size: 18px; max-width: 1280px; width: 100%;">
+		<tr>
+			<td style="padding: 50px 60px;" valign="top">
+				<table style="border-collapse: collapse; width: 100%;">
+					<tr>
+						<td style="padding-bottom: 25px;">
+							<p style="margin: 0; padding: 0; text-transform: uppercase; font-weight: bold; text-align: center;">INFORMED FINANCIAL CONSENT</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-bottom: 40px;">
+							<table style="border-collapse: collapse; width: 100%;">
+								<tr>
+									<td style="width: 55%;"  valign="top">
+										<table style="border-collapse: collapse;">
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>IFC Print Date: </strong></td>
+												<td valign="top" style="padding-bottom: 25px;">05/08/21</td>
+											</tr>
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>Patient Name:</strong></td>
+												<td valign="top" style="padding-bottom: 25px;">Alexander Moore</td>
+											</tr>
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>Patient Address:</strong></td>
+												<td valign="top" style="padding-bottom: 25px;"><span style="max-width: 200px; display:block;">132 ST GEORGES ROAD,BEXLEY,New South Wales,2207</span></td>
+											</tr>
+										</table>
+									</td>
+									<td style="width: 45%;"  valign="top">
+										<table style="border-collapse: collapse;">
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>Medical Record Number:</strong></td>
+												<td valign="top" style="padding-bottom: 25px;">L100002050</td>
+											</tr>
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>Account Number:</strong></td>
+												<td valign="top" style="padding-bottom: 25px;">A001856338</td>
+											</tr>
+											<tr>
+												<td valign="top" style="padding-bottom: 25px; padding-right: 15px;"><strong>Visit Date:</strong></td>
+												<td valign="top" style="padding-bottom: 25px;">05/07/21</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-top: 1px solid #727272; border-bottom: 1px solid #727272; padding: 20px 20px 0 20px;">
+							<p style="margin: 0 0 20px 0; line-height: 1.5;">The Chris O'Brien Lifehouse is committed to ensuring that you are informed about your financial obligations. Depending on
+								your health cover and/or insurance arrangements, you may be responsible for out-of-pocket expenses for the services /
+								treatment you receive at Chris O'Brien Lifehouse. Based on the information Chris O'Brien Lifehouse has received, we are
+								able to provide you with the estimate below which identifies the costs that you will be required to pay directly to Chris
+								O'Brien Lifehouse in advance of receiving services / treatment. Where an estimate is not possible in advance of treatment
+								or service delivery (e.g. in the case of emergency circumstances), Chris O'Brien Lifehouse will secure your informed
+								financial consent as soon as reasonably possible afterwards.</p>
+							<p style="margin: 0 0 20px 0; line-height: 1.5;">Unless otherwise specified, the estimate is limited to the charges and out-of-pocket expenses associated with the services /
+								treatment provided by Chris O'Brien Lifehouse. This estimate does not apply to services you may receive while at Chris
+								O'Brien Lifehouse from doctors in private practice (e.g. your admitting doctor, anaesthetist) or other private service
+								providers. We encourage you to secure written advice on their fees too. We also recommend you or your
+								Guardian/Nominated Decision Maker contact your private health insurer prior to admission if possible, to confirm your
+								benefits for this admission (i.e. excess, copayments, waiting periods or product exclusions) and that your premium
+								payments are up to date.</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-bottom: 1px solid #727272; padding: 20px 30px 40px 20px;">
+							<p style="margin: 0 0 30px 0; padding: 0; text-transform: uppercase; font-weight: bold;">CHRIS O'BRIEN LIFEHOUSE ESTIMATE</p>
+							<table style="border-collapse: collapse; width: 100%;">
+								<thead>
+								<tr>
+									<td style="padding: 0 5px 30px; text-align: left; width: 100px;"><strong>Item</strong></td>
+									<td style="padding: 0 5px 30px; text-align: left;"><strong>Description</strong></td>
+									<td style="padding: 0 5px 30px; text-align: center; width: 130px;"><strong>Quantity</strong></td>
+									<td style="padding: 0 5px 30px; text-align: left; width: 130px;"><strong>Charge</strong></td>
+									<td style="padding: 0 5px 30px; text-align: left; width: 130px;"><strong>Benefit</strong></td>
+									<td style="padding: 0 5px 30px; text-align: left; width: 130px;"><strong>Out-of-Pocket</strong></td>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td style="padding: 5px 7px;">30473</td>
+									<td style="padding: 5px 7px;">Accommodation</td>
+									<td style="padding: 5px 7px; text-align: center;">1</td>
+									<td style="padding: 5px 7px;">0.00</td>
+									<td style="padding: 5px 7px;">0.00</td>
+									<td style="padding: 5px 7px;">0.00</td>
+								</tr>
+								<tr>
+									<td style="padding: 5px 7px;">30473</td>
+									<td style="padding: 5px 7px;">Accommodation</td>
+									<td style="padding: 5px 7px; text-align: center;">1</td>
+									<td style="padding: 5px 7px;">0.00</td>
+									<td style="padding: 5px 7px;">0.00</td>
+									<td style="padding: 5px 7px;">0.00</td>
+								</tr>
+								<tr>
+									<td style="padding: 35px 7px 5px 7px;"></td>
+									<td style="padding: 35px 7px 5px 7px;"><strong>TOTALS</strong></td>
+									<td style="padding: 35px 7px 5px 7px; text-align: center;"></td>
+									<td style="padding: 35px 7px 5px 7px;">1144.00 </td>
+									<td style="padding: 35px 7px 5px 7px;">1144.00 </td>
+									<td style="padding: 35px 7px 5px 7px;">1144.00 </td>
+								</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 20px 20px 20px 20px;">
+							<p style="margin: 0 0 15px 0; padding: 0; text-transform: uppercase; font-weight: bold; text-align: center;">DECLARATION BY PATIENT OR THEIR AGENT OR GUARDIAN:</p>
+							<p style="margin: 0 0 20px 0; line-height: 1.5;">I have been advised of the above estimated out-of-pocket expenses associated with my services/treatment at Chris O'Brien
+								Lifehouse. I understand that this is an estimate only which has been calculated on the information available as at the date
+								on this form, and additional costs may be payable by me in the event of unforeseen circumstances such as changes to the
+								benefits payable for my treatment or variations and/or delays to my planned treatment. I understand that I will be
+								responsible for any costs not covered by my health cover or insurer, and I agree to pay for all additional costs associated
+								with the services/treatment provided to me by Chris O'Brien Lifehouse.</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 40px 20px 20px 20px;">
+							<table style="border-collapse: collapse; width: 100%;">
+<!--								<tr>
+									<td style="width: 60%; padding-bottom: 20px; padding-right: 40px;"  valign="top">
+										<table style="border-collapse: collapse; width: 100%;">
+											<tr>
+												<td style="padding-right: 20px;"><strong>Signed:</strong></td>
+												<td style="border-bottom: 1px solid #727272; width: 100%;"></td>
+											</tr>
+										</table>
+									</td>
+									<td style="width: 40%; padding-bottom: 20px;"  valign="top">
+										<table style="border-collapse: collapse; width: 100%;">
+											<tr>
+												<td style="padding-right: 20px;"><strong>Date:</strong></td>
+												<td style="border-bottom: 1px solid #727272; width: 100%;"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<table style="border-collapse: collapse; width: 100%;">
+											<tr>
+												<td style="padding-right: 20px; white-space: nowrap;"><strong>If signed by Patient's Guardian or <br>Substitute Decision Maker, Full Name (Print):</strong></td>
+												<td style="border-bottom: 1px solid #727272; width: 100%;"></td>
+											</tr>
+										</table>
+									</td>
+								</tr> -->
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="right" style="padding: 20px; font-size: 14px;">
+							Page 1 of 1
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+
+		</tr>
+	</table>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</textarea>
+	<input type="submit" value="Generate PDF" />
+</form>
